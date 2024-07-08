@@ -1,5 +1,6 @@
 package com.green.backend;
 
+import com.green.backend.service.Inhinh;
 import com.green.backend.service.TinhThueService;
 import com.green.backend.service.TuyenSinhService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,13 +16,15 @@ public class BackendApplication {
     private static TuyenSinhService tuyenSinhService ;
     @Autowired
     private static TinhThueService tinhThueService ;
+    @Autowired
+    private static Inhinh inhinh;
 
     public static void main(String[] args) {
 //          SpringApplication.run(BackendApplication.class, args);
 
 //          tuyenSinhService.tuyensinh();
 
-            tinhThueService.tinhthue() ;
+        inhinh.inhinh() ;
 
         }
     }

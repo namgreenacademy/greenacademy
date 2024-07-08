@@ -38,7 +38,7 @@ public class TinhThueService {
 //            soThuePhaiChiu = 0.35 * soThuePhaiChiu;
 //        }
 
-        soThuePhaiChiu = (soThuePhaiChiu <= 60) ? {System.out.println("hello"); 0.05 * soThuePhaiChiu ; } :
+        soThuePhaiChiu = (soThuePhaiChiu <= 60) ?  0.05 * soThuePhaiChiu :
                 (soThuePhaiChiu <= 120) ? 0.1 * soThuePhaiChiu :
                         (soThuePhaiChiu <= 216) ? 0.15 * soThuePhaiChiu :
                                 (soThuePhaiChiu <= 384) ? 0.2 * soThuePhaiChiu :
